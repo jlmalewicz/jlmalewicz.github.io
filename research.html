@@ -11,29 +11,33 @@
 </head>
 
 <body>
-    <h4>
-        x-ray reflection spectra of supermassive black hole binaries
-    </h4>
+    <div class="big-pagewide">
     <p>
-        my current work is on modeling the composite x-ray reflection spectrum associated with 
+        My current work is on modeling the composite X-ray reflection spectrum associated with 
         supermassive black hole binaries, with a special focus on those that emit low-frequency 
-        gravitational waves detectable by either lisa (laser interferometry space antenna) 
-        or the ptas (pulsar timing arrays).
+        gravitational waves detectable by either <i>LISA</i> (<i>Laser Interferometry Space Antenna</i>) 
+        or the PTAs (Pulsar Timing Arrays).
+    </p>
+
+    <details>
+        <summary>x-ray reflection spectra of supermassive black hole binaries</summary>
         <br>
-        i use advanced relativistic reflection tool <tt>relxill</tt> within x-ray spectral analysis 
-        software <tt>xspec</tt> to compute the full reflection spectrum, from roughly 0.1 to 100 keV, 
-        including the much beloved fe k$\alpha$ line at 6.4 keV.
-        <br>
-        my first <a href="https://arxiv.org/abs/2504.14018" class="out_link">paper</a>, titled "x-ray 
-        reflection signatures of supermassive black hole binaries," simulates the composite x-ray 
-        reflection spectra expected from smbhbs of different mass ratios $q=m_2/m_1$ and total mass accretion 
-        rates $\lambda_\textrm{tot}=\dot{m}_\textrm{tot}/\dot{m}_\textrm{tot, edd}$ 
-        (the amount by which 1 of the bhs is bigger than the other, and the quantity of gas being consumed
-        by the binary, relative to the total binary mass — this translates to luminosity).
-        we then simulated 100 ks observations of those very spectra, in either pta or lisa mass ranges,
-        with 4 x-ray mission concepts (newathena, axis, strobe-x, and hex-p) to see which ones could
-        pick up on the binarity of our synthetic sources.
-        <br>
+        <div>
+            <p>
+                I use advanced relativistic reflection tool <tt>relxill</tt> within X-ray spectral analysis 
+                software <tt>xspec</tt> to compute the full reflection spectrum, from roughly 0.1 to 100 keV, 
+                including the much beloved Fe K$\alpha$ line at 6.4 keV.
+                <br>
+                My first <a href="https://arxiv.org/abs/2504.14018" class="out_link">paper</a>, titled "X-ray 
+                Reflection Signatures of Supermassive Black Hole Binaries," simulates the composite X-ray 
+                reflection spectra expected from SMBHs of different mass ratios $q=m_2/m_1$ and total mass accretion 
+                rates $\lambda_\textrm{tot}=\dot{M}_\textrm{tot}/\dot{M}_\textrm{tot, Edd}$ 
+                (the amount by which 1 of the BHs is bigger than the other, and the quantity of gas being consumed
+                by the binary, relative to the total binary mass — this translates to luminosity).
+                We then simulated 100 ks observations of those very spectra, in either PTA or <i>LISA</i> mass ranges,
+                with 4 X-ray mission concepts (<i>NewAthena, AXIS, STROBE-X, and HEX-P</i>) to see which ones could
+                pick up on the binarity of our synthetic sources.
+                <br>
         <!-- we found that:
         <ul>
             <li> in unequal mass binaries, the different luminosities of the 2 bhs result in different
@@ -44,31 +48,48 @@
             <li> we would in principle be able to resolve the binary spectrum of a pta mass source 
             ($10^9 m_\odot$) at different orbital phases. </li>
         </ul> -->
-       
-        
-    </p>
-    <img src="img/source_of_hi_energy.png" height=200px>
-    <h4>
-        milky way compact binaries in the lisa frequency band 
-    </h4>
-    <p>
-        before grad school, i worked a year (2019-2020) with prof. shane larson at northwestern's ciera.
-        there, i used compact stellar binary population synthesis code 
-        <a href="https://cosmic-popsynth.github.io/" class="out_link"><tt>cosmic</tt></a> 
-        to characterize the non-resolvable background noise from galactic compact binaries 
-        and its impact on lisa's sensitivity curve.       
-    </p>
-    <h4>
-        beam luminosity loss in the large hadron collider
-    </h4>
-    <p>
-        i was also a summer student in 2019 at cern's beams and accelerator physics
-        department, working with dr. gianni iadarola. i ran particle tracking simulations on
-        their high performance computing cluster to study the evolution of beam luminosity 
-        loss in the large hadron collider (lhc) in the presence of complex non-linear 
-        beam-beam effects
-    </p>        
+            </p>
+            <div class="container">
+                <img src="img/source_of_hi_energy.png" height=250px>
+            </div>
+            
+        </div>
+    </details>
+
+    <details>
+        <summary>milky way compact binaries in the lisa frequency band</summary>
+        <br>
+        <div>
+            <p>
+                Before grad school, I worked a year (2019-2020) with Prof. Shane Larson at Northwestern's CIERA.
+                there, I used compact stellar binary population synthesis code 
+                <a href="https://cosmic-popsynth.github.io/" class="out_link"><tt>cosmic</tt></a> 
+                to characterize the non-resolvable background noise from galactic compact binaries 
+                and its impact on <i>LISA</i>'s sensitivity curve.       
+            </p>
+        </div>
+    </details>
+
+
+    <details>
+        <summary>beam luminosity loss in the large hadron collider</summary>
+        <br>
+        <div>
+            <p>
+                I was also a summer student in 2019 at CERN's Beams and Accelerator Physics
+                department, working with Dr. Gianni Iadarola. I ran particle tracking simulations on
+                their high performance computing cluster to study the evolution of beam luminosity 
+                loss in the Large Hadron Collider (LHC) in the presence of complex non-linear 
+                beam-beam effects
+            </p>
+            <div class="container">
+                <img src="img/lhc_beam_losses.png" height=300px>    
+            </div> 
+        </div>
+    </details>
+    <br>
     <a href="index.html" class="nav_button">back</a>
+    </div>
 </body>
 
 </html>
