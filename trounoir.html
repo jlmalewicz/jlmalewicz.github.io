@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> trou noir késako? </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* .container {
+            display:flex;
+            align-items: center;
+            justify-content: center
+        }
+        .text {
+            padding-left:20px;
+        } */
+    </style>
+    <script type="text/javascript"
+            src="LaTeXMathML.js">
+    </script>
+    
+</head>
+
+<body>
+    <h3> trou noir késako? </h3>
+    <p>
+        bon, on se tutoie si ça te dérange pas trop.
+        vu que maintenant c'est que toi et moi, je te donne 
+        mon spiel de manière un peu plus directe.
+    </p>
+</br>
+    <p>
+        un trou noir, en soi, c'est tout simple. c'est un objet d'une masse telle
+        qu'aucune force ou particule dans l'univers ne peut rivaliser avec sa gravité.
+        <i>pas même la lumière</i>! d'où le nom de trou noir.
+    </p>
+    <img src="img/spacetime.png" height=140px>
+    <p>
+        de base, les trous noirs, c'était juste une conjecture, une curiosité prédite par 
+        la solution la plus simple aux équations de champ d'einstein, celle de schwarzschild.
+        schwarzschild a réussi à formuler une solution, qui, bien qu'elle fusse très simple en 
+        soi (le champ gravitationnel autour d'une masse à symmétrie sphérique — c'est à dire toute ronde),
+        suggérerait l'existence d'un objet si dense qu'il ne laisserait pas la lumière s'en échapper.
+        <!-- etc sphericall symmetric, then add gravite, then expand on curvature then espace temps, then astrophysical manifestation then recette then supermassive -->
+    </p>
+
+    <details>
+        <summary id="gravite">vu qu'on y est, c'est quoi la gravité?</summary>
+        <br>
+        <div>
+            <div class="image">
+                <center>
+                    <img src="img/relativite.png" style="width: 300px">
+                </center>
+            </div>
+            <p>
+                la gravité selon einstein, c'est tout d'abord une histoire de géométrie. il s'agit de 2 postulats:
+                <ol type="i">
+                    <li>la présence de matière va déformer l'espace temps de façon plus ou moins proportionelle à sa masse</li>
+                    <li>la matière se déplace le long de trajectoires définies par l'espace temps</li>
+                </ol>
+                le physicien john wheeler utilise une jolie tournure de phrase:  
+                «l'espace-temps indique à la matière comment bouger — la matière indique à l'espace-temps comment se courber»  
+            </p>
+            <div class="container">
+                <div class="image">
+                    <img src="img/ballon.png" style="width: 300px">
+                </div>
+                <div class="text">
+                    <p>
+                        en gros, un objet que je lance tombe par terre, non pas parce que le sol l'attire comme un aimant...
+                        <br><br>
+                        mais parce que toute la matière qui constitue l'ensemble de la planète a déformé
+                        l'espace temps et la balle ne fait que suivre la trajectoire définie par la présence de la terre.
+                        cette trajectoire correspond à une ligne droite dans la géométrie de l'espace temps terrestre
+                    </p>
+                </div>
+            </div>
+        </div>
+    </details>
+
+    <p>
+        
+    </p>
+
+    <details>
+        <summary id="espacetemps">espace, temps, et puis quoi encore?</summary>
+        <br>
+        <div>
+            <div class="container">
+                <div class="image">
+                    <img src="img/petite_voiture.png" style="width: 150px">
+                </div>
+                <div class="text">
+                    <p>
+                        en gros, l'espace-temps, c'est la surface de l'univers. tout ce qui existe, 
+                        a existé ou existera, a sa place définie sur l'espace temps.
+                        <br><br>
+                        prenons, par example, l'example d'une petite voiture hot wheels sur une table.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image">
+                    <img src="img/petite_voiture_sur_table.png" style="width: 150px">
+                </div>
+                <div class="text">
+                    <p>
+                        la surface de la table représente l'ensemble des endroits où la petite voiture peut aller.
+                        on peut rajouter une dimension supplémentaire pour représenter le temps qui passe, 
+                        un peu comme ça à droite.
+                    </p>
+                    <p>
+                        ainsi, la trajectoire de la voiture sur le diagramme espace-temps que l'on vient de définir
+                        est une ligne droite, qui vient de l'origine (déplacement 0 centimètres, temps écoulé 0 secondes)
+                        et trace une diagonale vers le haut et la droite (passant par le point à 10 centimètres et 2 secondes, disont)
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="img/petite_voiture_sur_table_vs_temps.png" style="width: 200px">
+                </div>
+            </div>
+            <p>
+                ainsi, toute combinaison de 3 nombres $(t,x,y)$ correspond à un endroit précis et unique
+                parmi tous les points où la voiture peut aller.
+                <br><br>
+                notre espace-temps à nous, est en 4 dimensions:
+                <ul>
+                    <li> temps $(t)$</li>
+                    <li> endroit $(x,y,z)$, ou droite-gauche, devant-derrière, dessous-dessus</li>
+                </ul>
+            </p>
+        </div>
+    </details>
+
+    <p>
+        les trous noirs, on les trouve principalement sous deux formes différentes: <i>trous noir stellaires</i>, 
+        ce qu'il reste après qu'une étoile massive ait usé tout son carburant, et
+        <i>trous noirs massifs</i> (ou <i>supermassif</i>), qu'on trouve au centre de la plupart des (grosses) galaxies.
+        moi, c'est ces derniers qui m'intéressent.
+    </p>
+
+    <details>
+        <summary>recette pour un trou noir</summary>
+        <br>
+        <div>
+            <p>
+                pour t'en cuire un fait maison, tout ce qu'il te faut, c'est d'assembler 
+                assez de matière en un seul endroit et laisser la gravité faire son
+                travail.
+                Je te rassure: par ''assez'' de matière, je veux dire <i>vraiment beaucoup</i> 
+                de matière. genre, la masse de plusieurs soleils au moins. 
+            </p>
+            <div class="container">
+                <div class="text">
+                    <p>
+                        et puis le soleil, c'est déjà un sacré gaillard. une unité de masse solaire,
+                        $1M_\odot$, c'est égal à $10^{30}$ kilogrammes, plus ou moins. le symbole $\odot$
+                        signifie ''solaire.''
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="img/soleil.png" style="width: 300px">
+                </div>
+            </div>
+            <p>
+                donc, on reprend: <br>
+                ta recette à trou noir infaillible consiste à rassembler au moins $\sim 3M_{\odot}$ dans
+                un coin tranquille. toute cette masse va commencer à s'effondrer sous son poids, et si
+                à la base t'avais une sorte de nuage de particules de gaz, tu vas les voir se contracter 
+                en une sphère de plus en plus compacte, au centre de laquelle la pression et la température
+                grimpent ... et grimpent... <br>
+                ... jusqu'au moment fatidique...
+            </p>
+            <p>
+                ... où la sphère s'embrase!
+                félicitations! tu es désormais le fier parent d'une belle étoile toute neuve!
+            </p>
+            <p>
+                mais que c'est il donc passé? <br> le gaz qui forme ta sphère devrait consister
+                vraisemblablement plutôt d'hydrogène, l'élément le plus léger et le plus abondant
+                dans tout l'univers. c'est un atome fait d'un seul proton en tant que noyau, autour
+                duquel orbite un seul électron.
+                au centre de ta sphère, tu as atteint des conditions telles
+                que spontanément, tu as réussi à enclencher la fusion d'hydrogène en hélium, ce qui
+                est une source prodigieuse d'énergie.
+                <!-- (ce sont des conditions très difficiles à reproduire sur terre, c'est donc pour ça qu'on 
+                n'a pas d'usine à <i>fusion nucléaire</i> un peu partout. ce qu'on a, c'est des usines 
+                à <i>fission</i>! elles, elles prennent plutôt des atomes très très lourds et instables, 
+                et les fait exploser en 2). -->
+                cette énergie est libérée majoritairement sous la forme de lumière, qui produit une pression radiative
+                vers l'extérieur, qui arrive à contrebalancer la force de gravité et ta sphère de gas cesse
+                de s'effondrer (pour un certain temps).
+            </p>
+            <p>
+                tu peux maintenant attendre quelques milliards d'années pour que ta belle étoile épuise tout
+                son carburant. à ce moment là, la pression radiative qui équilibrait l'équation n'est plus
+                là pour combattre la force de la gravité.
+            </p>
+            <br>
+            <p>
+                et là, c'est le drame. l'effondrement.
+            </p>
+        </div>
+    </details>
+
+   
+    
+
+
+    <details>
+        <summary id="luminosite">comment ça, ça brille?</summary>
+            <br>
+            <div>
+                
+            </div>
+    </details>
+
+    <a href="index.html" class="nav_button">retour</a>
+
+</body>
+
+</html>

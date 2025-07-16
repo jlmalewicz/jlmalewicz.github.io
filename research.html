@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> research </title>
+    <script type="text/javascript"
+    src="LaTeXMathML.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h4>
+        x-ray reflection spectra of supermassive black hole binaries
+    </h4>
+    <p>
+        my current work is on modeling the composite x-ray reflection spectrum associated with 
+        supermassive black hole binaries, with a special focus on those that emit low-frequency 
+        gravitational waves detectable by either lisa (laser interferometry space antenna) 
+        or the ptas (pulsar timing arrays).
+        <br>
+        i use advanced relativistic reflection tool <tt>relxill</tt> within x-ray spectral analysis 
+        software <tt>xspec</tt> to compute the full reflection spectrum, from roughly 0.1 to 100 keV, 
+        including the much beloved fe k$\alpha$ line at 6.4 keV.
+        <br>
+        my first <a href="https://arxiv.org/abs/2504.14018" class="out_link">paper</a>, titled "x-ray 
+        reflection signatures of supermassive black hole binaries," simulates the composite x-ray 
+        reflection spectra expected from smbhbs of different mass ratios $q=m_2/m_1$ and total mass accretion 
+        rates $\lambda_\textrm{tot}=\dot{m}_\textrm{tot}/\dot{m}_\textrm{tot, edd}$ 
+        (the amount by which 1 of the bhs is bigger than the other, and the quantity of gas being consumed
+        by the binary, relative to the total binary mass — this translates to luminosity).
+        we then simulated 100 ks observations of those very spectra, in either pta or lisa mass ranges,
+        with 4 x-ray mission concepts (newathena, axis, strobe-x, and hex-p) to see which ones could
+        pick up on the binarity of our synthetic sources.
+        <br>
+        <!-- we found that:
+        <ul>
+            <li> in unequal mass binaries, the different luminosities of the 2 bhs result in different
+            ionization fractions for each mini-disk, which in turn means we are adding up 2 very different
+            spectral morphologies. in practice, what this means is that we get a confusing jumble that can
+            no longer be well 'fit' by a standard reflection model, and we get strong residuals in the soft 
+            band (about 2 keV and below).</li>
+            <li> we would in principle be able to resolve the binary spectrum of a pta mass source 
+            ($10^9 m_\odot$) at different orbital phases. </li>
+        </ul> -->
+       
+        
+    </p>
+    <img src="img/source_of_hi_energy.png" height=200px>
+    <h4>
+        milky way compact binaries in the lisa frequency band 
+    </h4>
+    <p>
+        before grad school, i worked a year (2019-2020) with prof. shane larson at northwestern's ciera.
+        there, i used compact stellar binary population synthesis code 
+        <a href="https://cosmic-popsynth.github.io/" class="out_link"><tt>cosmic</tt></a> 
+        to characterize the non-resolvable background noise from galactic compact binaries 
+        and its impact on lisa's sensitivity curve.       
+    </p>
+    <h4>
+        beam luminosity loss in the large hadron collider
+    </h4>
+    <p>
+        i was also a summer student in 2019 at cern's beams and accelerator physics
+        department, working with dr. gianni iadarola. i ran particle tracking simulations on
+        their high performance computing cluster to study the evolution of beam luminosity 
+        loss in the large hadron collider (lhc) in the presence of complex non-linear 
+        beam-beam effects
+    </p>        
+    <a href="index.html" class="nav_button">back</a>
+</body>
+
+</html>

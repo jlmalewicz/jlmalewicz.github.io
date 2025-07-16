@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad+Guides&family=Reenie+Beanie&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center
+}
+.text {
+    text-justify: inter-character;
+    padding-left:10px;
+    padding-right:20px;
+}
+
+/* ---------------------------------- */
+/* a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid green
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+
+a.nav_link {
+    color:#6d1a1a;
+} */
+
+a.nav_button:link, a.nav_button:visited {
+  background-color: white;
+  color: black;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1.5px solid black;
+}
+
+a.nav_button:hover {
+  background-color: lightgray;
+  color: black;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1.5px solid lightgrey;
+}
+
+a.nav_button:active {
+  background-color: #7e7e7e;
+  color: black;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1.5px solid #7e7d7e;
+}
+
+a.nav_link {
+    color: black
+}
+
+a.out_link:link {
+    color:#de2525;
+}
+a.out_link:visited {
+    color:#671818;
+}
+
+
+details > summary {
+    box-shadow: 3px 3px 4px black;
+    border: none;
+    width: fit-content;
+    padding: 2px 6px;
+    cursor:help;
+    font-family: "Playwrite FR Trad"
+}
+
+details > div {
+    padding: 5px 5px 5px 10px;
+    box-shadow: 3px 3px 3px 4px black;
+    width:50em;
+}
+
+
+.playwrite-fr-trad-title {
+  font-family: "Playwrite FR Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playwrite FR Trad";
+}
+
+body, div, text {
+    font-family: Spectral; 
+    font-weight: 300;
+}
