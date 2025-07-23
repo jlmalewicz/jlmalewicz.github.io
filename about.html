@@ -12,7 +12,24 @@
             justify-content: center
         }
         .text {
-            padding-left:20px;
+            padding-left:10px;
+            padding-right:10px;
+            /* width:30em */
+        }
+        .box {
+            border: 1.5px solid black;
+            border-radius: 10px;
+            padding: 0 20px 0 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 0;
+            text-align: center;
+            float: right;
+            width:10em
+        }
+        .icon {
+            width: 1em;
+            height: 1em
         }
     </style>
 
@@ -21,25 +38,53 @@
         <h3> about me </h3>
 
         <div class="container">
-            <div class="image">
+            <div class="image" style="float: left">
                 <img src="img/prof_pic.jpg"
-                    style="width: 150px; object-fit: cover; clip-path: circle();">
+                    style="width: 150px; height:150 px; object-fit: cover; clip-path: circle();">
             </div>
-            <div class="text">
+
+            <div class="text" style="float: left">
                 <p>
                     3 facts about me:
                     <ul>
                         <li>i can do (basic) html</li>
-                        <li>i have a cat, her name is bug</li>
-                        <li>i made my own letterboxd.com ripoff (but much worse) so i could log movies i've seen and write 
-                            little reviews but it's secret and i do not have to see anyone else's opinion.</li>
+                        <li>i have a cat, her name is <a href="bug.html" class="nav_link">bug</a></li>
+                        <li>i made my own letterboxd.com ripoff (but much worse) so i could log movies i've seen 
+                            and write little reviews but it's secret and i do not have to see anyone else's opinion.</li>
                     </ul>
                 </p>
             </div>
+            <div class="box">
+                <h4>links</h4>
+                <p>
+                    <img src="img/logo_github.png" class="icon">    <a class="nav_link" title="this is an innocuous link you should click it" href="https://github.com/jlmalewicz">github</a> <br>
+                    <img src="img/logo_linkedin.png" class="icon">  <a class="nav_link" title="this is an innocuous link you should click it" href="https://www.linkedin.com/in/julie-malewicz-b31bbb133/">linkedin</a> <br>
+                    <img src="img/logo_orcid.png" class="icon">     <a class="nav_link" title="this is an innocuous link you should click it" href="https://orcid.org/0009-0004-2625-5527">orcid</a> <br>
+                    <img src="img/logo_lastfm.png" class="icon">    <a class="nav_link" title="this is an innocuous link you should click it" href="https://www.last.fm/user/harperficial">last.fm</a>
+                </p>
+            </div>
+
         </div>
-
-
-        
+                <p>
+                    i'm originally from colmar, france but i did my undergraduate at northwestern university,
+                    north of chicago.
+                    i am passionate about public transit, reading books while on public transit, public parks,
+                    reading books while in public parks, indie movie theatres, my local library, 
+                    my 2008 prius, the 6 cds currently on rotation playing
+                    in my 2008 prius, my cat, and all of the green plants i keep in my home.
+                </p>
+        <br>
+        <div class="box" style="float:none; width:80%;margin:auto;text-align:left">
+            <h4>better links</h4>
+            <ul>
+                <li><a class="nav_link" title="this is an innocuous link you should click it" href="https://raddle.quest/">raddle</a>, a game where you link words down a chain using a set of clues</li>
+                <li><a class="nav_link" title="this link is also super safe, click it" href="https://catfishing.net/game/today">catfishing</a>, a game where you guess a wikipedia article's title from a list of what it links to </li>
+                <li><a class="nav_link" title="dude just click it" href="https://www.theatlantic.com/games/bracket-city/">bracket city</a>, a game where you guess words from nested clues to reveal a fun "on this day" article title</li>
+                <li>this is <a class="nav_link" title="safe link to click" href="https://itemlabel.com/products/peepy">peepy</a></li>
+                <li> all the <a class="nav_link" title="this one you really should click" href="https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/">sounds of earth</a> on the golden record aboard the voyager 1 and 2 spacecrafts</li>
+            </ul>
+        </div>
+        <br>
         <a href="index.html" class="nav_button">back</a>
     </div>
     </body>

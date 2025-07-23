@@ -72,6 +72,11 @@ a.nav_button:active {
 a.nav_link {
     color: black
 }
+a.nav_link:hover, a.nav_link.active {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
 
 a.out_link:link {
     color:#de2525;
@@ -79,6 +84,11 @@ a.out_link:link {
 a.out_link:visited {
     color:#671818;
 }
+a.out_link:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 
 details > summary {
@@ -105,11 +115,25 @@ details > div {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: "Playwrite FR Trad";
 }
+
+h4, h5, h6 {
+    font-family: "Playwrite FR Trad"; 
+    /* text-decoration: wavy underline ; */
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 400
+}
+
 
 body, div, text {
     font-family: Spectral; 
     font-weight: 300;
+}
+
+ul {
+  list-style-type:'- ';
+  margin-right: 0;
 }
