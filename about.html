@@ -33,7 +33,7 @@
         }
     </style>
 
-    <body>
+    <body onload="newFact()">
     <div class="big-pagewide" width="100%">
         <h3> about me </h3>
 
@@ -47,10 +47,10 @@
                 <p>
                     3 facts about me:
                     <ul>
-                        <li>i can do (basic) html</li>
+                        
+                        <li>i learned (basic) html for this</li>
                         <li>i have a cat, her name is <a href="bug.html" class="nav_link">bug</a></li>
-                        <li>i made my own letterboxd.com ripoff (but much worse) so i could log movies i've seen 
-                            and write little reviews but it's secret and i do not have to see anyone else's opinion.</li>
+                        <li><div id="factDisplay"></div></li>
                     </ul>
                 </p>
             </div>
@@ -65,15 +65,27 @@
             </div>
 
         </div>
-                <p>
-                    i'm originally from colmar, france but i did my undergraduate at northwestern university,
-                    north of chicago.
-                    i am passionate about public transit, reading books while on public transit, public parks,
-                    reading books while in public parks, indie movie theatres, my local library, 
-                    my 2008 prius, the 6 cds currently on rotation playing
-                    in my 2008 prius, my cat, and all of the green plants i keep in my home.
-                </p>
+        <p>
+            i'm originally from colmar, france but i did my undergraduate at northwestern university,
+            north of chicago.
+            i am passionate about public transit, reading books while on public transit, public parks,
+            reading books while in public parks, indie movie theatres, my local library, 
+            my 2008 prius, the 6 cds currently on rotation playing
+            in my 2008 prius, my cat, and all of the green plants i keep in my home.
+        </p>
+        <div class="container">
+            <img src="img/itllbelike.jpeg" height="250px">
+            <img src="img/wereoutside.jpg" height="250px" class="shadow">
+        </div>
+            <br>
+        <div class="container">
+            <p>
+                left, credit <a href="https://theartofpants.com/" class="out_link">@pants</a>... 
+                right, i'm not messing around with my plants
+            </p>
+        </div>
         <br>
+
         <div class="box" style="float:none; width:80%;margin:auto;text-align:left">
             <h4>better links</h4>
             <ul>
@@ -87,6 +99,21 @@
         <br>
         <a href="index.html" class="nav_button">back</a>
     </div>
+    
+    <script>
+        (function newFact() {
+        const facts = ["i made my own letterboxd.com ripoff (but much worse) so i could log movies i've seen and write little reviews but it's secret and i do not have to see anyone else's opinion.",
+        "this is a test, congrats you found it!",
+        "i learned french, german, english, spanish and polish (in that order) but have forgotten most of it all!",
+        "i am learning to knit so if you want a square, hit me up! other shapes not yet mastered, check back in later",
+        "the most impactful books i have read in recent memory were <i>to the lighthouse</i> by virginia woolf and <i>a hundred years of solitude</i> by gabriel garcía márquez.",
+        "i bought a nintendo 3ds xl so i could replay all my professor layton games.",
+        "i do not own a dishwasher."
+        ];
+        var randomFact = Math.floor(Math.random() * facts.length);
+        document.getElementById('factDisplay').innerHTML = facts[randomFact];
+        })();
+    </script>
     </body>
 
 </html>

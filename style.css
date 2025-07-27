@@ -39,6 +39,10 @@ a.nav_link {
     color:#6d1a1a;
 } */
 
+img.shadow {
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+
 a.nav_button:link, a.nav_button:visited {
   background-color: white;
   color: black;
