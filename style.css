@@ -110,6 +110,10 @@ details > div {
     width:50em;
 }
 
+details.padded_bottom {
+  margin-bottom:3cm
+}
+
 
 .playwrite-fr-trad-title {
   font-family: "Playwrite FR Trad", cursive;
