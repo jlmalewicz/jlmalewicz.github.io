@@ -11,12 +11,26 @@
 </head>
 
 <body>
+
+    
     <div class="big-pagewide">
+    <div class="container" style="justify-content: space-between">
+        <div style="padding: 0em 2em; font-family: 'Playwrite FR Trad'; font-weight: 400; font-size: medium;">research interests</div>
+        <a href="index.html" class="header_nav_button" style="font-size: small;">back</a>
+        <!-- <a href="blackhole.html"    class="nav_button">primer on black holes (en)</a>  &nbsp; -->
+        <!-- <a href="trounoir.html"     class="header_nav_button">tell me more about black holes</a> -->
+    </div>
+    <hr class="rounded-line">
+
     <h3>research</h3>
     <p>
-        My current work is on modeling the composite X-ray reflection spectrum associated with 
-        supermassive black hole binaries, with a special focus on those that emit low-frequency 
-        gravitational waves detectable by either <i>LISA</i> (<i>Laser Interferometry Space Antenna</i>) 
+        Black holes are fascinating but elusive objects to study. You have to get a bit crafty, since we rely on indirect means to find them.
+    </p>
+    <p>
+        My thesis work is on modeling the composite <b>X-ray reflection spectra</b> originating from the
+        two 'mini' accretion disks tethered to supermassive black holes in a close binary.
+        I'm especially interested in binary-specific signatures that can be used in a multimessenger context
+        alongside low-frequency gravitational waves detectable by either <i>LISA</i> (<i>Laser Interferometry Space Antenna</i>) 
         or the PTAs (Pulsar Timing Arrays).
     </p>
     <img src="img/color_bbh.png" height=150px width=300px>
@@ -25,16 +39,16 @@
         <br>
         <div>
             <p>
-                I use advanced relativistic reflection tool <tt>relxill</tt> within X-ray spectral analysis 
-                software <tt>xspec</tt> to compute the full reflection spectrum, from roughly 0.1 to 100 keV, 
-                including the much beloved Fe K$\alpha$ line at 6.4 keV.
+                I use advanced relativistic reflection tool <tt>relxill</tt> within the X-ray spectral analysis 
+                software <tt>xspec</tt> to compute the full reflection spectrum, from roughly 0.1 to 100 keV --
+                including the much beloved Fe K$\alpha$ line at 6.4 keV -- of supermassive black hole binaries.
                 <br>
                 My first <a href="https://arxiv.org/abs/2504.14018" class="out_link">paper</a>, titled "X-ray 
                 Reflection Signatures of Supermassive Black Hole Binaries," simulates the composite X-ray 
                 reflection spectra expected from SMBHs of different mass ratios $q=m_2/m_1$ and total mass accretion 
                 rates $\lambda_\textrm{tot}=\dot{M}_\textrm{tot}/\dot{M}_\textrm{tot, Edd}$ 
                 (the amount by which 1 of the BHs is bigger than the other, and the quantity of gas being consumed
-                by the binary, relative to the total binary mass — this translates to luminosity).
+                by the binary, relative to the total binary mass — which translates to luminosity and ionization fraction).
 
                 <br>
         <!-- we found that:
@@ -56,7 +70,6 @@
                 with 4 well-studied X-ray mission concepts (<i>NewAthena, AXIS, STROBE-X, and HEX-P</i>) to see which ones could
                 pick up on the binarity of our synthetic sources.
             </p>
-            
         </div>
     </details>
 
@@ -90,7 +103,7 @@
                 binary stellar evolution model parameters (such as natal kicks, or stability of
                 common envelope mass transfer with a Hertzsprung gap companion) would affect the
                 expected number of sources of each type (i.e. BH, NS, and sub-types of WDs) that
-                would be individually detectable by <i>LISA</i>.
+                would be individually detectable by <i>LISA</i> -- with a focus on BH-BH binaries.
             </p>
             <div class="container">
                 <img src="img/stellar_cycle.png" height=350px>
@@ -115,10 +128,10 @@
             <div class="container">
                 <img src="img/lhc_beam_losses.png" height=300px>    
             </div> 
-            <p>
-                We had to develop a mathematical formalism to quantify the losses while 
+            <!-- <p>
+                I helped develop a mathematical formalism to quantify the losses while 
                 minimizing systematic errors from scratch, which was a fun challenge!
-            </p>
+            </p> -->
         </div>
     </details>
     <br>

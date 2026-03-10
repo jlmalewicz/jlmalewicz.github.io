@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      
+      h3 {
+        font-family: "Bitcount Single";
+        font-weight: 400;
+        text-align: center;
+      }
+
+  
+
+      /* 
+      body {
+        background-color: white;
+        padding: 20px;
+        font-family: Arial;
+      } */
+
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      /* h1 {
+        font-size: 50px;
+        word-break: break-all;
+      } */
+
+      .row {
+        /* margin: 8px -16px; */
+        margin: 0px 0px
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column {
+        padding: 10px;
+      }
+
+      /* Create 3 equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 30%;
+      }
+
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Content */
+      .content {
+        background-color: white;
+        /* padding: 10px; */
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="big-pagewide" width="100%">
+
+        <div class="header" style="position: sticky; top: 0; z-index: 999; background-color: white;">
+            <div class="container" style="justify-content: space-between;">
+                <div style="padding: 0em 2em; font-family: 'Playwrite FR Trad'; font-weight: 400; font-size: medium;">
+                    sketches
+                </div>
+                <a href="index.html" class="header_nav_button" style="font-size: small;">back</a>
+            </div>
+            <hr class="rounded-line">
+        </div>
+
+    <br>
+
+    <p>
+      You're free to use any of those sketches for non-commercial purposes, as long as proper credit is attributed. 
+      If you do use them, I'd love to hear about it!
+    </p>
+
+    <details style="align-items: center; justify-content: center;">
+      <summary id="telescopes" style="border-radius: 10px; font-family: 'Bitcount Single'; font-weight: 400; font-size: larger;">astronomical instruments series</summary>
+      <br>
+      <div style="place-items: center;" width="80%">  
+
+        <div class="row">
+
+          <div class="column">
+            <div class="content">
+              <a href="URL_OF_DESTINATION_PAGE_OR_IMAGE" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_ALMA.png" alt="alma" style="width:100%">
+              </a>
+              <h3>ALMA</h3>
+              <p>Radio array, part of the Event Horizon Telescope</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_IceCube.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_IceCube.png" alt="icecube" style="width:100%">
+              </a>
+              <h3>IceCube</h3>
+              <p>Neutrino detector embedded in the polar ice caps</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_JWST.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_JWST.png" alt="JWST" style="width:100%">
+              </a>
+              <h3>JWST</h3>
+              <p>Optical and infrared space telescope</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_LIGO.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_LIGO.png" alt="LIGO" style="width:100%">
+              </a>
+              <h3>LIGO</h3>
+              <p>Gravitational wave detector, along with Virgo and KAGRA</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_LISA.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_LISA.png" alt="LISA" style="width:100%">
+              </a>
+              <h3>LISA</h3>
+              <p>Future space-based gravitational wave detector</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_NewAthena.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_NewAthena.png" alt="NewAthena" style="width:100%">
+              </a>
+              <h3>NewAthena</h3>
+              <p>Future X-ray space telescope </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_Rubin.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_Rubin.png" alt="Rubin" style="width:100%">
+              </a>
+              <h3>Rubin</h3>
+              <p>Large optical survey instrument based in Chile. Also the first major telescope named after a woman</p>
+            </div>
+          </div>
+
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_TechTower.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_TechTower.png" alt="TechTower" style="width:100%">
+              </a>
+              <h3>Tech Tower</h3>
+              <p>Clock tower on the Georgia Tech campus</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <a href="/img/sketches/illustration_raster_color_Trinity.png" target="_blank" rel="noopener noreferrer">
+                <img src="/img/sketches/illustration_raster_color_Trinity.png" alt="Trinity" style="width:100%">
+              </a>
+              <h3>Trinity</h3>
+              <p>Array of neutrino detectors based in Utah</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </details>
+
+</div>
+
+</body>
+</html>

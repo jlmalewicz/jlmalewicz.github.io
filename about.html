@@ -19,9 +19,9 @@
         .box {
             border: 1.5px solid black;
             border-radius: 10px;
-            padding: 0 20px 0 20px;
-            margin-left: 20px;
-            margin-right: 20px;
+            padding: 0 5px 0 5px;
+            margin-left: 10px;
+            margin-right: 10px;
             margin-top: 0;
             text-align: center;
             float: right;
@@ -35,7 +35,18 @@
 
     <body onload="newFact()">
     <div class="big-pagewide" width="100%">
-        <h3> about me </h3>
+        
+        <div class="header" style="position: sticky; top: 0; z-index: 999; background-color: white;">
+            <div class="container" style="justify-content: space-between;">
+                <div style="padding: 0em 2em; font-family: 'Playwrite FR Trad'; font-weight: 400; font-size: medium;">
+                    about me
+                </div>
+                <a href="index.html" class="header_nav_button" style="font-size: small;">back</a>
+            </div>
+            <hr class="rounded-line">
+        </div>
+
+        <br>
 
         <div class="container">
             <div class="image" style="float: left">
@@ -43,13 +54,13 @@
                     style="width: 150px; height:150 px; object-fit: cover; clip-path: circle();">
             </div>
 
-            <div class="text" style="float: left">
+            <div class="text" style="float: left; width:40%">
                 <p>
                     3 facts about me:
                     <ul>
                         
-                        <li>i learned (basic) html for this</li>
-                        <li>i have a cat, her name is <a href="bug.html" class="nav_link">bug</a></li>
+                        <li>I learned (basic) html for this</li>
+                        <li>I have a cat, her name is <a href="bug.html" class="nav_link">Bug</a></li>
                         <li><div id="factDisplay"></div></li>
                     </ul>
                 </p>
@@ -57,23 +68,23 @@
             <div class="box">
                 <h4>links</h4>
                 <p>
-                    <img src="img/logo_gt.png" class="icon">    <a class="nav_link" title="this is an innocuous link you should click it" href="https://physics.gatech.edu/user/julie-malewicz">georgia tech</a> <br>
-                    <img src="img/logo_github.png" class="icon">    <a class="nav_link" title="this is an innocuous link you should click it" href="https://github.com/jlmalewicz">github</a> <br>
-                    <img src="img/logo_linkedin.png" class="icon">  <a class="nav_link" title="this is an innocuous link you should click it" href="https://www.linkedin.com/in/julie-malewicz-b31bbb133/">linkedin</a> <br>
-                    <img src="img/logo_orcid.png" class="icon">     <a class="nav_link" title="this is an innocuous link you should click it" href="https://orcid.org/0009-0004-2625-5527">orcid</a> <br>
-                    <img src="img/logo_lastfm.png" class="icon">    <a class="nav_link" title="this is an innocuous link you should click it" href="https://www.last.fm/user/harperficial">last.fm</a> <br>
-                    <img src="img/logo_ravelry.png" class="icon">    <a class="nav_link" title="this is an innocuous link you should click it" href="https://www.ravelry.com/people/lisealine">ravelry.com</a>
+                    <img src="img/logo_gt.png" class="icon">        <a class="nav_link" target=_blank title="this is an innocuous link you should click it" href="https://physics.gatech.edu/user/julie-malewicz">georgia tech</a> <br>
+                    <img src="img/logo_github.png" class="icon">    <a class="nav_link" target=_blank title="this is an innocuous link you should click it" href="https://github.com/jlmalewicz">github</a> <br>
+                    <img src="img/logo_linkedin.png" class="icon">  <a class="nav_link" target=_blank title="this is an innocuous link you should click it" href="https://www.linkedin.com/in/julie-malewicz-b31bbb133/">linkedin</a> <br>
+                    <img src="img/logo_orcid.png" class="icon">     <a class="nav_link" target=_blank title="this is an innocuous link you should click it" href="https://orcid.org/0009-0004-2625-5527">orcid</a> <br>
+                    <img src="img/logo_lastfm.png" class="icon">    <a class="nav_link" target=_blank title="this is an innocuous link you should click it" href="https://www.last.fm/user/harperficial">last.fm</a> <br>
+                    <img src="img/logo_ravelry.png" class="icon">   <a class="nav_link" target=_blank title="this is an innocuous link you should click it" href="https://www.ravelry.com/people/lisealine">ravelry.com</a>
                 </p>
             </div>
 
         </div>
         <p>
-            i'm originally from colmar, france but i did my undergraduate at northwestern university,
-            north of chicago.
-            i am passionate about public transit, reading books while on public transit, public parks,
+            I'm originally from Colmar, France but I did my undergraduate at Northwestern University,
+            north of Chicago.
+            Outside of physics, I am passionate about public transit, reading books while on public transit, public parks,
             reading books while in public parks, indie movie theatres, my local library, 
-            my 2008 prius, the 6 cds currently on rotation playing
-            in my 2008 prius, my cat, and all of the green plants i keep in my home.
+            my 2008 Prius, the 6 CDs currently on rotation playing
+            in my 2008 Prius, <a href="bug.html" class="nav_link">my cat</a>, and all of the green plants I keep in my home.
         </p>
         <div class="container">
             <img src="img/itllbelike.jpeg" height="250px">
@@ -83,35 +94,65 @@
         <div class="container">
             <p>
                 left, credit <a href="https://theartofpants.com/" class="out_link">@pants</a> and 
-                right, a small fraction of all my plants
+                right, a fraction of all my plants
             </p>
         </div>
         <br>
 
-        <div class="box" style="float:none; width:80%;margin:auto;text-align:left">
-            <h4>better links</h4>
-            <ul>
-                <li><a class="nav_link" title="this is an innocuous link you should click it" href="https://raddle.quest/">raddle</a>, a game where you link words down a chain using a set of clues</li>
-                <li><a class="nav_link" title="this link is also super safe, click it" href="https://catfishing.net/game/today">catfishing</a>, a game where you guess a wikipedia article's title from a list of what articles link to it</li>
-                <li> behold, <a class="nav_link" title="can't promise anything for this one" href="https://www.timecube.net/">timecube.net</a>, </li>
-                <!-- <li><a class="nav_link" title="dude just click it" href="https://www.theatlantic.com/games/bracket-city/">bracket city</a>, a game where you guess words from nested clues to reveal a fun "on this day" article title</li> -->
-                <!-- <li> this is <a class="nav_link" title="safe link to click" href="https://itemlabel.com/products/peepy">peepy</a></li> -->
-                <li> all the <a class="nav_link" title="this one you really should click" href="https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/">sounds of earth</a> on the golden record aboard the voyager 1 and 2 spacecrafts</li>
-            </ul>
-        </div>
+
+        <details style="align-items: center;">
+            <summary id="read" style="border-radius: 10px;">reading list</summary>
         <br>
-        <a href="index.html" class="nav_button">back</a>
+            <div style="border-radius: 10px;">
+                <p>
+                    In reverse chronological order, my recently read list:
+                    <ul>
+                        <li><i>(currently reading)</i> Georgi Gospodinov, <i> Death and the Gardener </i></li>
+                        <li>Alan Lightman, <i>The Accidental Universe (and other essays)</i></li>
+                        <li>Fyodor Dostoyevski, <i>Notes from Underground</i></li>
+                        <li>Charles Burns, <i>Black Hole</i></li>
+                        <li>Daniel Clowes, <i>Ghost World</i></li>
+                        <li>Eugène Ionesco, <i>Le Roi Se Meurt</i></li>
+                        <li>Olga Tokarczuk, <i>Flights</i></li>
+                        <li>Kaveh Akbar, <i>Martyr!</i></li>
+                        <li>H.G. Wells, <i>War of the Worlds</i></li>
+                    </ul>
+                </p>
+            </div>
+        </details>
+  
+<br>
+
+        <details style="align-items: center;">
+            <summary id="read" style="border-radius: 10px;">better links</summary>
+        <br>
+            <div style="border-radius: 10px;">
+                <ul>
+                    <li><a class="nav_link" title="this is an innocuous link you should click it" href="https://raddle.quest/">raddle</a>, a game where you link words down a chain using a set of clues</li>
+                    <li><a class="nav_link" title="this link is also super safe, click it" href="https://catfishing.net/game/today">catfishing</a>, a game where you guess a wikipedia article's title from a list of what articles link to it</li>
+                    <li> behold, <a class="nav_link" title="can't promise anything for this one" href="https://www.timecube.net/">timecube.net</a>, </li>
+                    <!-- <li><a class="nav_link" title="dude just click it" href="https://www.theatlantic.com/games/bracket-city/">bracket city</a>, a game where you guess words from nested clues to reveal a fun "on this day" article title</li> -->
+                    <!-- <li> this is <a class="nav_link" title="safe link to click" href="https://itemlabel.com/products/peepy">peepy</a></li> -->
+                    <li> all the <a class="nav_link" title="this one you really should click" href="https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/">sounds of earth</a> on the golden record aboard the voyager 1 and 2 spacecrafts</li>
+                </ul>
+            </div>
+        </details>
+        <br>
+
+        <br>
+
     </div>
     
     <script>
         (function newFact() {
-        const facts = ["i made my own letterboxd.com ripoff (but much worse) so i could log movies i've seen and write little reviews but it's secret and i do not have to see anyone else's opinion.",
+        const facts = ["I made my own letterboxd.com ripoff (but much worse) so I could log movies I've seen and write little reviews but it's secret and I do not have to see anyone else's opinion.",
         "this is a test, congrats you found it!",
-        "i learned french, german, english, spanish and polish (in that order) but have forgotten most of it all!",
-        "i am learning to knit so if you want a square, hit me up! other shapes not yet mastered, check back in later.",
-        "the most impactful books i have read in recent memory were <i>to the lighthouse</i> by virginia woolf and <i>a hundred years of solitude</i> by gabriel garcía márquez.",
-        "i bought a nintendo 3ds xl so i could replay all my professor layton games.",
-        "i do not own a dishwasher. or a microwave."
+        "I learned French, German, English, Spanish and Polish (in that order) but have forgotten most of it all",
+        // "i am learning to knit so if you want a square, hit me up! other shapes not yet mastered, check back in later.",
+        "I'm learning to knit little stuffed animals. Currently making endless shrimps to be used as cat toys. Hit me up if you want one!",
+        // "the most impactful books I have read in recent memory were <i>to the lighthouse</i> by virginia woolf and <i>a hundred years of solitude</i> by gabriel garcía márquez.",
+        // "I bought a Nintendo 3DS XL so i could replay all my professor layton games.",
+        "I do not own a dishwasher. Or a microwave."
         ];
         var randomFact = Math.floor(Math.random() * facts.length);
         document.getElementById('factDisplay').innerHTML = facts[randomFact];
