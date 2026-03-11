@@ -6,135 +6,198 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-            .icon {
+        .icon {
             width: 1em;
             height: 1em
         }
+        .place {
+            font-size: small;
+        }
+        .eventName {
+            font-weight: 500;
+        }
+        .date {
+            color: rgb(169, 169, 169);
+            text-align: right;
+            vertical-align: middle;
+            /* display: flex; */
+        }
+        .publications {
+            padding-left: 3em;
+            text-indent: -3em;
+            list-style-type:none;
+        }
+
 </style>
 <body>
     <div class="big-pagewide" width="100%">
-        <div class="container" style="justify-content: space-between">
-            <div style="padding: 0em 2em; font-family: 'Playwrite FR Trad'; font-weight: 400; font-size: medium;">papers, posters and presentations</div>
-            <a href="index.html" class="header_nav_button" style="font-size: small;">back</a>
-        </div>
-        <hr class="rounded-line">
-        
-        <div class="container">
-            <div class="text">
 
-        <h3> publications </h3>
-        <ul>
-            <li> <strong  style="font-weight: bold">J.L. Malewicz</strong>, D.R. Ballantyne, T. Bogdanovic, L. Brenneman & T. Dauser.  
-                (in prep.) 
-                X-ray reflection spectral features as diagnostics of supermassive black hole binary properties
-            </li>
-            <li> A. Polzin, K.E. Whitaker, C.M. Urry et al. (incl <strong  style="font-weight: bold">J.L. Malewicz</strong>)
-                (2025)
-                <a href="https://arxiv.org/abs/2512.24465" style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">Picture an Astronomer: Best Practices for Retaining Talent in Astrophysics</a>.
-                White paper from Picture an Astronomer symposium.
-            </li>
-            <li> M. Koss et al. (incl. <strong  style="font-weight: bold">J.L. Malewicz</strong>)
-                (2025)
-                <a href="https://arxiv.org/abs/2511.00253"  style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">The Advanced X-ray Imaging Satellite (AXIS) Community Science Book</a>
-                (section on supermassive black hole binaries)
-            </li>
-            <li> <strong  style="font-weight: bold">J.L. Malewicz</strong>, D.R. Ballantyne, T. Bogdanovic, L. Brenneman & T. Dauser.  
-                (2025) 
-                <a href="https://arxiv.org/abs/2504.14018"  style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">X-ray reflection signatures of supermassive black hole binaries.</a>
-                ApJ 989 190.
-            </li>
-            <li> A. Polzin, Y. Asali, S. Bhimani, M. Brady, M.C. Chen, L. DeMarchi, M. Gurevich, E. Lichko, E. Louden, <strong  style="font-weight: bold">J.L. Malewicz</strong>, S. Pagan, M. Rice, Z. Shen, E. Simon, C. Stauffer,  J.L. Zagorac, K. Auchettl, K. Breivik, H. Chen, D. Coppejans, S. Kolwa, R. Margutti, P. Natarajan, E. Nelson, K.L. Page, S. Toonen, K.E. Whitaker & I. Zhuravleva.
-                (2023) <a href="https://arxiv.org/abs/2312.04041"  style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">Astronomy as a Field: a Guide for Aspiring Astrophysicists</a>.
-                Guide created as part of the Sirius B VERGE program.
-            </li>
-        </ul>
-        </div>
-                <div class="image">
-                    <h3></h3>
-                <a href="https://arxiv.org/abs/2312.04041" target=_blank title="this is an innocuous link you should click it" class="out_link">
-                    <img src="img/siriusb.png" style="width: 300px; border-radius: 10px;"> <i>~i illustrated this book!~</i>
-                </a>
+        
+        <div class="header" style="position: sticky; top: 0; z-index: 999; background-color: white;">
+            <div class="container" style="justify-content: space-between;">
+                <div style="padding: 0em 2em; font-family: 'Playwrite FR Trad'; font-weight: 400; font-size: medium;">
+                    papers, posters and presentations
                 </div>
+                <a href="index.html" class="header_nav_button" style="font-size: small;">back</a>
             </div>
+            <hr class="rounded-line">
+        </div>
 
-        <div class="container">
-            <div class="text">
-                <h3> posters </h3>
-                <ul>
-                    <li>
-                        (december 2025) Gravitational Wave Physics and Astronomy Workshop (GWPAW). Georgia Tech.
-                        Atlanta, Georgia.
-                    </li>
-                    <li>
-                        (november 2025) Georgia Regional Astronomy Meeting (GRAM). Emory U. 
-                        Atlanta, Georgia.
-                    </li>
-                    <li>
-                        (september 2025) Spin Workshop at Wake Forest U. <em> Taking Spin Measurements for a Spin </em>.
-                        Winston-Salem, North Carolina.
-                    </li>
-                    <li>
-                        (january 2024) 243rd (Winter) Meeting of the American Astronomical Society .
-                        New Orleans, Louisiana.
-                    </li>
-                    <li>
-                        (november 2022) Georgia Regional Astronomy Meeting (GRAM). Agnes Scott U. 
-                        Decatur, Georgia.
-                    </li>
-                </ul>
-            </div>
 
-            <div class="text">         
+        
+        <div class="text">
 
-                <h3> talks </h3>
-                <ul>
-                    <li>
-                        (november 2025) Georgia Regional Astronomy Meeting (GRAM). Emory U. 
-                        Atlanta, Georgia.
-                    </li>
-                    <li>
-                        (june 2025) Center for Relativistic Astro REU Lunch & Learn seminar. Georgia Tech.
-                        Atlanta, Georgia.
-                    </li>
-                    <li>
-                        (may 2025) NANOGrav astrophysics working group.
-                        remote.
-                    </li>
-                    <li>
-                        (april 2025) AXIS TDAMM online workshop.
-                        remote.
-                    </li>
-                    <li>
-                        (february 2025) Aspen Winter conference 2025. <em> The Era of Binary Supermassive Black Holes: Coordination of Nanohertz-frequency Gravitational-wave Follow-up</em>.
-                        Aspen, Colorado.
-                    </li>
-                    <li>
-                        (november 2024) JSI 2024 conference. <em>The Formation and Early Evolution of Supermassive Black Holes</em>.
-                        Baltimore, Maryland.
-                    </li>
-                    <li>
-                        (november 2024) LISA astrophysics working group.
-                        remote.
-                    </li>
-                    <li>
-                        (april 2024) Center for Relativistic Astro Cosmic Coffee. Georgia Tech.
-                        Atlanta, Georgia.
-                    </li>
-                    <li>
-                        (march 2024) EMIT 2024 Astronomy seminar series.
-                        Nashville, Tennessee.
-                    </li>
-                    <li>
-                        (october 2022) Center for Relativistic Astro Cosmic Coffee. Georgia Tech.
-                        Atlanta, Georgia.
-                    </li>
-                </ul>
-            </div>
-            
+            <h3> publications </h3>
+            <ul class="publications">
+                <li> <strong  style="font-weight: bold">J.L. Malewicz</strong>, D.R. Ballantyne, T. Bogdanovic, L. Brenneman & T. Dauser.  
+                    (in prep.) 
+                    X-ray reflection spectral features as diagnostics of supermassive black hole binary properties
+                </li>
+                <li> A. Polzin, K.E. Whitaker, C.M. Urry et al. (incl <strong  style="font-weight: bold">J.L. Malewicz</strong>)
+                    (2025)
+                    <a href="https://arxiv.org/abs/2512.24465" style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">Picture an Astronomer: Best Practices for Retaining Talent in Astrophysics</a>.
+                    White paper from Picture an Astronomer symposium.
+                </li>
+                <li> M. Koss et al. (incl. <strong  style="font-weight: bold">J.L. Malewicz</strong>)
+                    (2025)
+                    <a href="https://arxiv.org/abs/2511.00253"  style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">The Advanced X-ray Imaging Satellite (AXIS) Community Science Book</a>
+                    (section on supermassive black hole binaries)
+                </li>
+                <li> <strong  style="font-weight: bold">J.L. Malewicz</strong>, D.R. Ballantyne, T. Bogdanovic, L. Brenneman & T. Dauser.  
+                    (2025) 
+                    <a href="https://arxiv.org/abs/2504.14018"  style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">X-ray reflection signatures of supermassive black hole binaries.</a>
+                    ApJ 989 190.
+                </li>
+                <li> A. Polzin, Y. Asali, S. Bhimani, M. Brady, M.C. Chen, L. DeMarchi, M. Gurevich, E. Lichko, E. Louden, <strong  style="font-weight: bold">J.L. Malewicz</strong>, S. Pagan, M. Rice, Z. Shen, E. Simon, C. Stauffer,  J.L. Zagorac, K. Auchettl, K. Breivik, H. Chen, D. Coppejans, S. Kolwa, R. Margutti, P. Natarajan, E. Nelson, K.L. Page, S. Toonen, K.E. Whitaker & I. Zhuravleva.
+                    (2023) <a href="https://arxiv.org/abs/2312.04041"  style="font-weight: bold" title="this is an innocuous link you should click it" target=_blank class="out_link">Astronomy as a Field: a Guide for Aspiring Astrophysicists</a>.
+                    Guide created as part of the Sirius B VERGE program.
+                </li>
+            </ul>
+        </div>
+  
 
+        <div class="text" style="clear:both;display: block; width: 100%">
+            <h3> posters </h3>
+            <table>
+                <tr>
+                    <td class="date">december 2025</td>
+                    <td class="eventName">Gravitational Wave Physics and Astronomy Workshop (GWPAW)</td>
+                    <td class="place"><i>Georgia Tech</i></td>
+                    <td class="place">Atlanta, GA</td>
+                </tr>
+                <tr>
+                    <td class="date">november 2025</td>
+                    <td class="eventName">Georgia Regional Astronomy Meeting (GRAM)</td> 
+                    <td class="place"><i>Emory University</i></td>
+                    <td class="place">Atlanta, GA</td>
+                </tr>
+                <tr>
+                    <td class="date">september 2025</td>
+                    <td class="eventName"><i>"Taking Spin Measurements for a Spin"</i> Workshop</tf>
+                    <td class="place"><i>Wake Forest University</i></td>
+                    <td class="place">Winston-Salem, NC</td>
+                </tr>
+                <tr>
+                    <td class="date">january 2024</td>
+                    <td class="eventName">243rd Winter Meeting</td>
+                    <td>AAS</td>
+                    <td class="place">New Orleans, LA</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="text" style="clear:both; display: block; width: 100%">         
+
+            <h3> talks </h3>
+            <table>
+                <tr>
+                    <td class="date">november 2025</td>
+                    <td class="eventName">Georgia Regional Astronomy Meeting (GRAM)</td>
+                    <td class="place"><i>Emory University</i></td>
+                    <td class="place">Decatur, GA</td>   
+                </tr>
+                <tr>
+                    <td class="date">september 2025</td>
+                    <td class="eventName">HEAD Frontier Seminar</td>
+                    <td class="place"><i>AAS</i></td>
+                    <td class="place">remote</td>                    
+                </tr>
+                <tr>
+                    <td class="date">june 2025</td>
+                    <td class="eventName">REU Lunch & Learn</td>
+                    <td class="place"><i>Georgia Tech</i></td>
+                    <td class="place">Atlanta, GA</td>  
+                </tr>
+                <tr>
+                    <td class="date">may 2025</td>
+                    <td class="eventName">Astrophysics Working Group</td>
+                    <td class="place"><i>NANOGrav</i></td>
+                    <td class="place">remote</td>   
+                </tr>
+                <tr>
+                    <td class="date">april 2025</td>
+                    <td class="eventName">TDAMM workshop</td>
+                    <td class="place"><i>AXIS Science Team</i></td>
+                    <td class="place">remote</td>   
+                </tr>
+                <tr>
+                    <td class="date">february 2025</td>
+                    <td class="eventName">Conference <em>"The Era of Binary Supermassive Black Holes: <br>Coordination of Nanohertz-frequency Gravitational-wave Follow-up"</em></td>
+                    <td class="place"><i>Aspen Center for Physics</i></td>
+                    <td class="place">Aspen, CO</td>   
+                </tr>
+                <tr>
+                    <td class="date">november 2024</td>
+                    <td class="eventName">Conference <em>"The Formation and Early Evolution of <br>Supermassive Black Holes"</em>. 
+                    <td class="place"><i>JSI</i></td>
+                    <td class="place">Baltimore, MD</td>   
+                </tr>
+                <tr>
+                    <td class="date">november 2024</td>
+                    <td class="eventName">Astrophysics Working Group</td>
+                    <td class="place"><i>LISA</i></td>
+                    <td class="place">remote</td>   
+                </tr>
+                <tr>
+                    <td class="date">april 2024</td>
+                    <td class="eventName">Cosmic Coffee</td>
+                    <td class="place"><i>CRA, Georgia Tech</i></td>
+                    <td class="place">Atlanta, GA</td>   
+                </tr>
+                <tr>
+                    <td class="date">march 2024</td>
+                    <td class="eventName">EMIT seminar</td>
+                    <td class="place"><i>Vanderbilt-Fisk</i></td>
+                    <td class="place">Nashville, TN</td>   
+                </tr>
+                <tr>
+                    <td class="date">november 2022</td>
+                    <td class="eventName">Georgia Regional Astronomy Meeting (GRAM)</td>
+                    <td class="place"><i>Agnes Scott University</i></td>
+                    <td class="place">Decatur, GA</td>
+                </tr>  
+                <tr>
+                    <td class="date">october 2022</td>
+                    <td class="eventName">Cosmic Coffee</td>
+                    <td class="place"><i>CRA, Georgia Tech</i></td>
+                    <td class="place">Atlanta, GA</td>   
+                </tr>              
+            </table>
         </div>
         
+        <br>
+
+        <div class="image" style="display: flex; align-items: center; justify-content: center;">
+            <a href="https://arxiv.org/abs/2312.04041" target=_blank title="this is an innocuous link you should click it" class="out_link">
+                <img src="img/siriusb.png" style="width: 300px; border-radius: 10px;"> 
+                <img src="img/paa.png" style="width: 300px; border-radius: 10px;"> 
+                <br>
+                <i style="display: flex; justify-content: center;">~i illustrated these books!~</i>
+            </a>
+        </div>
     </div>
+    
+</div>
 
 </body>
 

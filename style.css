@@ -139,7 +139,12 @@ a.out_link:hover {
     text-decoration: none;
 }
 
-
+table { 
+    border-spacing: 1em 0; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 details > summary {
     box-shadow: 3px 3px 4px #4f4f4f;
@@ -232,4 +237,8 @@ aside {
 ul {
   list-style-type:'- ';
   margin-right: 0;
+}
+
+p > b {
+  font-weight: 600;
 }
