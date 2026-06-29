@@ -4,14 +4,18 @@
 <html>
 <head>
     <title> bug </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 
 
 <body>
-    <button style="background-color: white; border: none; box-shadow: none;" onclick="bugMultiplier()"> <div id="BugDiv"> <img src="img/uhoh.png"></div> </button>
-    uh oh youve been bugged!
+    <button style="background-color: white; border: none; box-shadow: none; cursor: pointer" onclick="bugMultiplier()"> <div id="BugDiv"> <img src="img/uhoh.png"></div> </button>
+    <p> uh oh you've been bugged! </p>
+    <p id='uhoh'> </p>
+    <a onclick="trickedYou()" class="nav_button">back</a>
+
 </body>
 
 <script>
@@ -21,6 +25,13 @@ const div = document.getElementById("BugDiv");
 const bug = document.createElement("img");
 bug.src = "img/uhoh.png"
 div.append(bug);
+}
+
+function trickedYou() {
+const p = document.getElementById("uhoh");
+const lineBreak = document.createElement("br");
+p.append(lineBreak);
+p.append("Tricked you! there is no back button, you're stuck here");
 }
 </script>
 

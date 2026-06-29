@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> achilles </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <button style="background-color: white; border: none; box-shadow: none; cursor: pointer" onclick="achMultiplier()"> <div id="AchDiv"> <img style="width: 100px" src="img/achilles1.png"></div> </button>
+    <p> uh oh trojan horse alert </p>
+    <p id='uhoh'> </p>
+    <a onclick="trickedYou()" class="nav_button">back</a>
+
+</body>
+
+<script>
+function achMultiplier() {
+    const achillesList = ["img/achilles1.png","img/achilles2.png","img/achilles3.png","img/achilles4.png"]
+    var randomFile = Math.floor(Math.random() * achillesList.length);
+
+    const div = document.getElementById("AchDiv");
+    const ach = document.createElement("img");
+    ach.src = achillesList[randomFile];
+    ach.style = "width: 100px"
+    div.append(ach);
+}
+
+function trickedYou() {
+    const p = document.getElementById("uhoh");
+    const lineBreak = document.createElement("br");
+    p.append(lineBreak);
+    p.append("Tricked you! there is no back button, you're stuck here");
+}
+</script>
+
+</body>
+</html>
