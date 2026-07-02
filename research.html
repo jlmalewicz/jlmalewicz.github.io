@@ -31,10 +31,9 @@
         My thesis work is on modeling the composite <b>X-ray reflection spectra</b> originating from the
         two 'mini' accretion disks tethered to massive black holes in a close binary.
         <!--  -->
-
-        I'm especially interested in using binary-specific signatures to find and characterize that can be used
-        alongside low-frequency gravitational waves detectable by either <i>LISA</i> (<i>Laser Interferometry Space Antenna</i>) 
-        or the PTAs (Pulsar Timing Arrays).
+        I'm especially interested in using binary-specific signatures to find and characterize these black holes, 
+        and that can be used alongside low-frequency gravitational waves detectable by either <i>LISA</i> 
+        (<i>Laser Interferometry Space Antenna</i>) or the PTAs (Pulsar Timing Arrays).
     </p>
     <img src="img/color_bbh.png" height=150px width=300px>
     <details class="padded_bottom">
@@ -42,8 +41,8 @@
         <br>
         <div>
             <p>
-                I use the relativistic reflection modeling tool <tt>relxill</tt> within the X-ray spectral 
-                analysis software <tt>xspec</tt> to compute the composite reflection spectrum of accreting
+                I use the relativistic reflection model <tt>relxill</tt> in <tt>xspec</tt> 
+                to compute the composite reflection spectrum of accreting
                 supermassive black hole binaries. 
                 <br>
                 <!-- Accretion is the process through which gas caught in the orbit of a black hole releases 
@@ -68,7 +67,13 @@
                 effects on the composite X-ray reflection: the Doppler oscillations of each spectrum relative to the other
                 due to the orbital motion of the binary and preferential accretion in unequal mass binaries, which results
                 in the less massive of the two black holes capturing the larger portion of the circumbinary gas inflow.
-                Mass accretion rate, $\dot{M}$, translates to luminosity.
+                Mass accretion rate, $\dot{M}$, translates to luminosity pretty straightforwardly -- but also to the degree
+                of photoionization of the accretion disks, which has a whole slew of downstream effects on the reflection spectrum.
+                <br>
+                In practive, what this means is that you can expect the reflection spectrum of a binary to be a confusing
+                jumble of reflection features that can no longer pass credibly as that of a single black hole. This effect can 
+                be subtle, but one thing isn't: the periodic Doppler shifting will be an unequivocal smoking gun for the presence of
+                a binary.
         <!-- we found that:
         <ul>
             <li> in unequal mass binaries, the different luminosities of the 2 bhs result in different
@@ -108,7 +113,7 @@
         <div>
             <p>
                 there, I used Katie Breivik's compact stellar binary population synthesis code 
-                <a href="https://cosmic-popsynth.github.io/" class="out_link"><tt>cosmic</tt></a> 
+                <a href="https://cosmic-popsynth.github.io/" class="out_link"><tt>COSMIC</tt></a> 
                 to characterize the non-resolvable background noise from galactic compact binaries 
                 and its impact on <i>LISA</i>'s sensitivity curve. 
                 We know that the most numerous
@@ -121,7 +126,6 @@
                 of stellar evolution and compact object formation!
                 <br>
                 Talk about turning bad news into an advantage.
-            </p>
             <div class="container">
                 <img src="img/loud_sources.png" height=350px>
             </div>
@@ -151,6 +155,13 @@
                 their high performance computing cluster to study the evolution of beam luminosity 
                 loss in the Large Hadron Collider (LHC) in the presence of complex non-linear 
                 beam-beam effects. 
+            </p>
+            <p>
+                The problem we set out to answer was simple: the LHC experiences unexplained luminosity loss,
+                especially in the first few millions of turns -- that <i>could</i> ootentially be attributable 
+                to non-linear interactions between the charged particles, which is impossible to ascertain analytically.
+                Instead, you must run massive Monte Carlo simulations of a typical LHC run, and keep track of how many particles
+                veered off-course. 
             </p>
             <div class="container">
                 <img src="img/lhc_beam_losses.png" height=300px>    
