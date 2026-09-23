@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Special+Elite%family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 .container {
     display:flex;
@@ -23,30 +23,101 @@
     margin: auto;
 }
 
-/* ---------------------------------- */
-/* a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border: 2px solid green
-}
 
-a:hover, a:active {
-  background-color: red;
-}
-
-
-a.nav_link {
-    color:#6d1a1a;
-} */
 
 img.shadow {
   filter: drop-shadow(5px 5px 10px #000000);
 }
 
+/* neon stuff */
+
+div.neon-container {
+  justify-content: right;
+  align-items: center;
+  margin: 0;
+  float: right;
+}
+
+.neon-text {
+  animation: flicker 2s infinite alternate;   
+  font-family: "Tilt Neon", Courier, monospace;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-shadow: 
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #ff0000,
+      0 0 40px #ff0000,
+      0 0 50px #ff0000,
+      0 0 64px #ff0000,
+      0 0 72px #ff0000;
+}
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #ff0000,
+      0 0 40px #ff0000,
+      0 0 50px #ff0000,
+      0 0 64px #ff0000,
+      0 0 72px #ff0000;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #575757;
+  font-style: oblique;
+  text-decoration: underline wavy;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  position: absolute;
+  /* bottom: 125%; Position above the text */
+  left: -70%;
+  transform: translateX(+20%);
+  transition: opacity 0.3s;
+  z-index: 1;
+  font-weight: normal;
+}
+
+.tooltip-container:hover {
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 /* NAV BUTTONS W/ BORDERS */
@@ -242,7 +313,7 @@ ol li::marker {
 
 .philosopher-regular {
   font-family: "Philosopher", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-style: normal;
 }
 
@@ -265,6 +336,17 @@ h5, h6 {
     /* text-align: center; */
     font-size: 10pt;
     font-weight: 400
+}
+
+
+.tilt-neon {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
 }
 
 /* .futuristic {
